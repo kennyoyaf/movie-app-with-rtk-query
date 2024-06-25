@@ -1,0 +1,35 @@
+@import "../../common//colors.scss";
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the icon from being interactive */
+  color: #aaa;
+}
+
+input {
+  padding-left: 30px; /* Adjust padding to make space for the icon */
+  height: 40px;
+  width: 200px;
+  box-sizing: border-box;
+  background: $secondary-color;
+  border-radius: 40px;
+  border: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 800px) {
+  input {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+}
