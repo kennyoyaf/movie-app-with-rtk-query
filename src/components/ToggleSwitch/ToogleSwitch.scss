@@ -1,6 +1,7 @@
 @import "../../common//colors.scss";
 
 .toggle-icon {
+  cursor: pointer;
   .sun-icon {
     color: $font-primary;
     font-size: 30px;
