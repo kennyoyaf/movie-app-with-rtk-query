@@ -10,19 +10,27 @@
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  pointer-events: none; /* Prevent the icon from being interactive */
+  pointer-events: none;
   color: #aaa;
 }
 
 input {
-  padding-left: 30px; /* Adjust padding to make space for the icon */
+  padding-left: 30px;
   height: 40px;
   width: 200px;
   box-sizing: border-box;
-  background: $secondary-color;
   border-radius: 40px;
   border: none;
   color: #ffffff;
+}
+
+.white-input {
+  background-color: $font-primary;
+  color: $secondary-color;
+}
+.black-input {
+  background-color: $secondary-color;
+  color: $font-primary;
 }
 
 @media screen and (min-width: 800px) {

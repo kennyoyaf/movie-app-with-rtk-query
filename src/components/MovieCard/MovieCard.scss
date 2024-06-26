@@ -7,19 +7,36 @@
   grid-gap: 15px;
   margin: 30px 0;
 
+  .white-container {
+    background-color: $font-primary;
+    border: 2px solid $secondary-color;
+  }
+  .black-container {
+    background-color: #000;
+  }
+  .different-container {
+    background-color: $secondary-color;
+    border: 2px solid $font-primary;
+  }
+  .white-text {
+    color: $font-primary;
+  }
+  .black-text {
+    color: $secondary-color;
+  }
+
   .movies-box {
     margin: 0 auto;
-    background: $secondary-color;
     border-radius: 15px;
 
     .text-title {
       padding: 15px;
       .movie-title {
-        color: $font-primary;
+        // color: $font-primary;
         font-weight: 400;
       }
       .movie-text {
-        color: $font-primary;
+        // color: $font-primary;
         font-weight: 400;
         font-size: 12px;
         margin-top: 10px;

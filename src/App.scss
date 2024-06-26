@@ -11,10 +11,13 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: $primary-color;
-}
-
 .container {
   margin: 0px 40px;
+}
+
+.white-container {
+  background-color: $font-primary;
+}
+.black-container {
+  background-color: $secondary-color;
 }

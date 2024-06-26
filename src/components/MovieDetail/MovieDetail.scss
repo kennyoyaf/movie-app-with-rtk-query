@@ -1,8 +1,22 @@
 @import "../../common//colors.scss";
 
 .movie-detail-wrapper {
-  color: $font-primary;
   margin-top: 20px;
+}
+
+.white-detail-text {
+  color: $font-primary;
+}
+.black-detail-text {
+  color: $secondary-color;
+}
+.white-detail-bg {
+  background-color: $font-primary;
+  color: $secondary-color;
+}
+.black-detail-bg {
+  background-color: $secondary-color;
+  color: $font-primary;
 }
 
 .movie-detail-image {
@@ -42,7 +56,7 @@
     p {
       display: flex;
       justify-content: center;
-      // color: #000;
+      color: $font-primary;
       font-weight: 700;
     }
   }
@@ -66,7 +80,6 @@
 }
 
 .plot {
-  background-color: $secondary-color;
   padding: 20px;
   font-size: 12px;
   font-weight: 400;
@@ -79,7 +92,6 @@
     align-items: center;
 
     .see-more {
-      color: #ffffff;
       cursor: pointer;
       display: flex;
       flex-direction: column;

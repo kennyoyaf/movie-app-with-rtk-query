@@ -1,7 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BsFillMoonStarsFill, BsSun } from "react-icons/bs";
-import { toggleDarkMode } from "./darkModeSlice";
+import { toggleDarkMode } from "../../common/apis/Features/darkModeSlice";
+import "./ToogleSwitch.scss";
 
 const ToogleSwitch = () => {
   const dispatch = useDispatch();
@@ -13,9 +14,9 @@ const ToogleSwitch = () => {
   return (
     <div onClick={handleClick} className="toggle-icon">
       {darkMode ? (
-        <BsFillMoonStarsFill className="moon-icon" />
-      ) : (
         <BsSun className="sun-icon" />
+      ) : (
+        <BsFillMoonStarsFill className="moon-icon" />
       )}
     </div>
   );

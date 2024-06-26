@@ -1,7 +1,6 @@
 @import "../../common//colors.scss";
 
 .header {
-  background-color: $secondary-color;
   height: 72px;
   padding: 0 40px;
   display: flex;
@@ -10,10 +9,24 @@
   overflow-x: hidden;
 }
 
+.black-header {
+  background-color: $secondary-color;
+}
+
+.white-header {
+  background-color: $font-primary;
+}
+
 .logo {
-  color: $font-primary;
   font-size: 20px;
   font-weight: 600;
+}
+
+.white-logo {
+  color: $font-primary;
+}
+.black-logo {
+  color: $secondary-color;
 }
 
 .user-image,
@@ -28,16 +41,6 @@
   align-items: center;
   margin-top: 20px;
   padding: 0 40px;
-  // .toggle-icon {
-  //   .sun-icon {
-  //     color: #ffffff;
-  //     font-size: 30px;
-  //   }
-  //   .moon-icon {
-  //     color: #ffffff;
-  //     font-size: 30px;
-  //   }
-  // }
 }
 
 .movie-lane {
